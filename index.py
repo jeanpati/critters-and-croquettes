@@ -5,49 +5,54 @@ from swimming import Catfish, ClownFish, Goldfish, Mallard, Turtle
 from walking import Bear, Donkey, Goat, Horse, Llama
 
 
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "midday")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "midday", "llama chow")
 
-yogi = Bear("Yogi", "black bear", "morning")
-
-
-eeyore = Donkey("Eeyore", "donkey", "afternoon")
-
-gabby = Goat("Gabby", "goat", "midday")
+yogi = Bear("Yogi", "black bear", "morning", "honey")
 
 
-hunter = Catfish("Hunter", "cat fish")
+eeyore = Donkey("Eeyore", "donkey", "afternoon", "antidepressants")
+
+gabby = Goat("Gabby", "goat", "midday", "lizards")
 
 
-kale = Copperhead("Kale", "copperhead snake")
+hunter = Catfish("Hunter", "cat fish", "chicken livers")
 
 
-steve = Snail("Steve", "snail")
+kale = Copperhead("Kale", "copperhead snake", "pennies")
 
 
-franklin = Turtle("Franklin", "turtle")
+steve = Snail("Steve", "snail", "beer")
 
 
-bojack = Horse("Bojack", "horse", "afternoon")
+franklin = Turtle("Franklin", "turtle", "butter lettuce")
 
 
-marty = ClownFish("Marty", "clown fish")
+bojack = Horse("Bojack", "horse", "afternoon", "a martini")
 
 
-daffy = Mallard("Daffy", "mallard")
+marty = ClownFish("Marty", "clown fish", "jokes")
 
 
-fudge = Goldfish("Fudge", "gold fish")
+daffy = Mallard("Daffy", "mallard", "spinach")
 
 
-randall = RatSnake("Randall", "rat snake")
+fudge = Goldfish("Fudge", "gold fish", "golden-o's")
 
 
-patrick = Python("Patrick", "python")
+randall = RatSnake("Randall", "rat snake", "rats")
 
 
-kobe = BlackMamba("Kobe", "black mamba")
+patrick = Python("Patrick", "python", "code")
+
+
+kobe = BlackMamba("Kobe", "black mamba", "passes")
 
 
 print(
     f"{yogi.name} the {yogi.species} is available to pet during the {yogi.shift} shift."
 )
+
+print(miss_fuzz.feed())
+print(bojack.feed())
+
+print(bojack)
