@@ -5,14 +5,14 @@ from swimming import Catfish, ClownFish, Goldfish, Mallard, Turtle
 from walking import Bear, Donkey, Goat, Horse, Llama
 
 
-miss_fuzz = Llama("Miss Fuzz", "domestic llama")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "midday")
 
-yogi = Bear("Yogi", "black bear")
+yogi = Bear("Yogi", "black bear", "morning")
 
 
-eeyore = Donkey("Eeyore", "donkey")
+eeyore = Donkey("Eeyore", "donkey", "afternoon")
 
-gabby = Goat("Gabby", "goat")
+gabby = Goat("Gabby", "goat", "midday")
 
 
 hunter = Catfish("Hunter", "cat fish")
@@ -27,7 +27,7 @@ steve = Snail("Steve", "snail")
 franklin = Turtle("Franklin", "turtle")
 
 
-bojack = Horse("Bojack", "horse")
+bojack = Horse("Bojack", "horse", "afternoon")
 
 
 marty = ClownFish("Marty", "clown fish")
@@ -46,3 +46,8 @@ patrick = Python("Patrick", "python")
 
 
 kobe = BlackMamba("Kobe", "black mamba")
+
+
+print(
+    f"{yogi.name} the {yogi.species} is available to pet during the {yogi.shift} shift."
+)
